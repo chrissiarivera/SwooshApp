@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desired_league_bg"
+    tools:context="jalanechrissia.rivera.com.swoosh.SecondActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:padding="40dp"/>
+
+    <TextView
+        android:id="@+id/TVsecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desired league: "
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:textColor="@color/standardTextColor"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/mens"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/button"
+        android:alpha=".5"
+        android:text="Mens"
+        android:textSize="17sp"
+        android:textColor="@color/standardTextColor"
+        android:textStyle="bold"
+        android:onClick="men"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/womens"
+        android:layout_alignStart="@+id/womens"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/womens"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/button"
+        android:alpha=".5"
+        android:text="Womens"
+        android:textSize="17sp"
+        android:textColor="@color/standardTextColor"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/mens"
+        android:layout_alignLeft="@+id/coed"
+        android:layout_alignStart="@+id/coed" />
+    <Button
+        android:id="@+id/coed"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/button"
+        android:alpha=".5"
+        android:text="Co-ed"
+        android:textSize="17sp"
+        android:textColor="@color/standardTextColor"
+        android:textStyle="bold"
+        android:layout_marginTop="22dp"
+        android:onClick="onClick"
+        android:layout_below="@+id/womens"
+        android:layout_alignLeft="@+id/next"
+        android:layout_alignStart="@+id/next" />
+
+    <TextView
+        android:id="@+id/leagueTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I am a: "
+        android:textColor="@color/standardTextColor"
+        android:gravity="center"
+        android:layout_below="@+id/coed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/leagueTV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/standardTextColor"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:layout_above="@+id/next"
+        android:layout_toRightOf="@+id/leagueTV"
+        android:layout_toEndOf="@+id/leagueTV"
+        android:layout_marginBottom="33dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
+        android:alpha=".2"
+        android:background="@drawable/button"
+        android:text="Next"
+        android:textSize="17sp"
+        android:textColor="@color/standardTextColor"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>
